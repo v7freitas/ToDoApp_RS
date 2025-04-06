@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     color: "#4EA8DE",
   },
   variantCompleted: {
-    color: "#8284FA",
+    color: "#5E60CE",
   },
   count: {
     fontSize: 14,

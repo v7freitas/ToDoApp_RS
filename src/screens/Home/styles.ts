@@ -4,6 +4,20 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  taskContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: 12,
+    borderRadius: 8,
+    height: 64,
+    borderWidth: 1,
+    borderColor: "#333333",
+    backgroundColor: "#262626",
+  },
+  firstTaskContainer: {
+    backgroundColor: "#1A1A1A",
+  },
   header: {
     flex: 1 / 4,
     backgroundColor: "#0D0D0D",
@@ -14,8 +28,9 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#1A1A1A",
     paddingHorizontal: 24,
+    paddingBottom: 24,
   },
-  input: {
+  inputForm: {
     flexDirection: "row",
     position: "absolute",
     left: 24,
@@ -28,18 +43,5 @@ export const styles = StyleSheet.create({
 
     marginTop: 59,
     marginBottom: 20,
-  },
-  emptyList: {
-    flex: 1,
-    borderTopColor: "#333333",
-    borderTopWidth: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    paddingTop: 48,
-  },
-  emptyMessage: {
-    color: "#808080",
-    textAlign: "center",
-    fontSize: 14,
   },
 });

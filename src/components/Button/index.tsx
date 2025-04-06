@@ -1,9 +1,13 @@
 import { styles } from "./styles";
 import { Image, TouchableOpacity, View } from "react-native";
 
-export function ButtonAddTask() {
+type ButtonAddTaskProps = {
+  onPress: () => void;
+};
+
+export function ButtonAddTask({ onPress }: ButtonAddTaskProps) {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.button}>
         <Image source={require("../../assets/images/plus/plus.png")} />
       </View>
